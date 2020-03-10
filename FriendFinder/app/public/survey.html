@@ -6,11 +6,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
 
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <!--Jquery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+ 
 </head>
 
 <body>
 
 <!--Main header goes here, informing the user what the deal is-->
+
+<div class="jumbotron ml-4 mr-4 mt-4" id="header-div">
+        
+    <h1 id="title" class="display-4 text-center">Friend Finder Survey</h1>
+
+    <p class="lead justify text-center">Answer the questions below, hit sumbit when done.</p>
+
+</div>
+
+<div class="card m-4" id="survey div">
+
+    <div class="card-header" id="survey-header">
+        Friend Finder Survey!
+    </div>
+
+    <!--Test form-->
+    <form class="no-validation">
+
+        <!--name-->
+        
+        <div class="col ml-2 mt-4 mb-4">
+            <input type="text" class="form-control" placeholder="Name" required>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Photo?-->
+        <div class="form-group m-2">
+            <label for="photo">Upload your profile image</label>
+            <input type="file" class="form-control-file" id="photoUpload">
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 1-->
+        <p class="pl-2 mt-2">#1</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 2-->
+        <p class="pl-2 mt-2">#2</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 3-->
+        <p class="pl-2 mt-2">#3</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 4-->
+        <p class="pl-2 mt-2">#4</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 5-->
+        <p class="pl-2 mt-2">#5</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 6-->
+        <p class="pl-2 mt-2">#6</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 7-->
+        <p class="pl-2 mt-2">#7</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 8-->
+        <p class="pl-2 mt-2">#8</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 9-->
+        <p class="pl-2 mt-2">#9</p>
+        <div class="form-row align-items-center inline">
+            
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+
+        <!--Question 10-->
+            <p class="pl-2 mt-2">#10</p>
+        <div class="form-row align-items-center inline">
+            <div class="col-auto my-1">  
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2 ml-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <p class=" ml-2 mb-2 text-sm-right">question .....</p>
+        </div>
+
+        <hr class="ml-2 mr-2">
+        <!--Submit button for form-->
+        <input type="submit" class="btn btn-primary m-4 float-right" id="submit">
+
+    </form>
+
+
+
+</div>
+
+<!--Modal?-->
+<div class="modal">
+
+</div>
+
+<!--footer-->
+<div class="footer m-4">
+    <a href="home.html" class="float-left m-4" id="homeLink">Return Home</a>
+</div>
+
+
+
+
 
 <!--Large div below for survey questions-->
 
@@ -24,5 +285,5 @@
 <script>
 
     // JS code goes here for survey values and posting
-    
+
 </script>
