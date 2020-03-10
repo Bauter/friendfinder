@@ -1,9 +1,12 @@
 //====================================================================
 // Dependencies
 //====================================================================
-
+const path = require("path")
 const express = require("express")
-require("../data/friends.js")(friends);
+//require("./app/data/friends.js");
+//const friendJS = require("../data/friends.js")
+
+//let friends = friendJS.friends
 //=====================================================================
 // Set up express
 //=====================================================================
@@ -19,7 +22,7 @@ app.use(express.json());
 //=====================================================================
 
 require("./app/routing/apiRoutes.js")(app)
-require("./app/routing/htmlRoutes")(app)
+require("./app/routing/htmlRoutes.js")(app)
 
 
 //=====================================================================

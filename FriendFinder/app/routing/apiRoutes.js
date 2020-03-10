@@ -4,7 +4,10 @@
 
 const express = require("express");
 const path = require("path");
-require("../data/friends.js")(friends);
+//require("./app/data/friends.js");
+const friendJS = require("../data/friends.js")
+
+let friends = friendJS.friends
 
 //===================================================================================
 // API Routes (as an exported module)
