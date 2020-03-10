@@ -5,9 +5,9 @@
 const express = require("express");
 const path = require("path");
 //require("./app/data/friends.js");
-const friendJS = require("../data/friends.js")
+const friend = require("../data/friends.js")
 
-let friends = friendJS.friends
+
 
 //===================================================================================
 // API Routes (as an exported module)
@@ -15,15 +15,15 @@ let friends = friendJS.friends
 
 module.exports = function(app) {
 
-    app.get("/api/friends", function(reg, res) {
-        return res.json(friends);
+    app.get("/api/friends", function(req, res) {
+        return res.json(friend);
     });
 
-    app.post("/api/friends", function(reg, res) {
+    app.post("/api/friends", function(req, res) {
 
         let newFriend = req.body;
 
-        friends.push(newFriend);
+        friend.push(newFriend);
 
         console.log(newFriend);
 

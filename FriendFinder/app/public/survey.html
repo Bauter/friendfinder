@@ -34,21 +34,26 @@
     </div>
 
     <!--Test form-->
-    <form class="no-validation">
+    <form class="no-validation" name="form">
 
         <!--name-->
         
         <div class="col ml-2 mt-4 mb-4">
-            <input type="text" class="form-control" placeholder="Name" id="name" required>
+            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
         </div>
 
         <hr class="ml-2 mr-2">
 
         <!--Photo?-->
-        <div class="form-group m-2">
+        <!-- <div class="form-group m-2">
             <label for="photo">Upload your profile image</label>
-            <input type="file" class="form-control-file" id="photoUpload">
+            <input type="file" class="form-control-file" id="photoUpload" name='photo'>
+        </div> -->
+
+        <div class="col ml-2 mt-4 mb-4">
+            <input type="text" class="form-control" placeholder="Profile Image URL" id="photoURL" name="photo" required>
         </div>
+
 
         <hr class="ml-2 mr-2">
 
@@ -58,7 +63,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question1">
+              <select class="custom-select mr-sm-2 ml-2" id="question1" name="q1">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -78,7 +83,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question2">
+              <select class="custom-select mr-sm-2 ml-2" id="question2" name="q2">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -98,7 +103,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question3">
+              <select class="custom-select mr-sm-2 ml-2" id="question3" name="q3">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -118,7 +123,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question4">
+              <select class="custom-select mr-sm-2 ml-2" id="question4" name="q4">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -138,7 +143,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question5">
+              <select class="custom-select mr-sm-2 ml-2" id="question5" name="g5">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -158,7 +163,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question6">
+              <select class="custom-select mr-sm-2 ml-2" id="question6" name="q6">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -178,7 +183,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question7">
+              <select class="custom-select mr-sm-2 ml-2" id="question7" name="q7">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -198,7 +203,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question8">
+              <select class="custom-select mr-sm-2 ml-2" id="question8" name="q8">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -218,7 +223,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question9">
+              <select class="custom-select mr-sm-2 ml-2" id="question9" name="q9">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -237,7 +242,7 @@
         <div class="form-row align-items-center inline">
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question10">
+              <select class="custom-select mr-sm-2 ml-2" id="question10" name="q10">
                 <option selected>Choose...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -266,7 +271,7 @@
 
 <!--footer-->
 <div class="footer m-4">
-    <a href="home.html" class="float-left m-4" id="homeLink">Return Home</a>
+    <a href="/" class="float-left m-4" id="homeLink">Return Home</a>
 </div>
 
 
@@ -280,16 +285,24 @@
 
     $('#submit').on("click", function (event) {
         event.preventDefault();
-        let scoreArray = [];
-        for(i=0; i<10; i++) {
-            scoreArray.push($("question[i]").val())
-        };
+        
+        let q1 = $('#question1').val()
+        let q2 = $('#question2').val()
+        let q3 = $('#question3').val()
+        let q4 = $('#question4').val()
+        let q5 = $('#question5').val()
+        let q6 = $('#question6').val()
+        let q7 = $('#question7').val()
+        let q8 = $('#question8').val()
+        let q9 = $('#question9').val()
+        let q10 = $('#question10').val()
 
         let newFriend = {
             name: $('#name').val(),
-            photo: $('#photoUpload').val(),
-            scores: scoreArray
+            photo: $('#photoURL').val(),
+            scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
         };
+
     
         $.post("/api/friends", newFriend).then(function(data) {
             console.log("survey.html", data);
