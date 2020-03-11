@@ -279,7 +279,8 @@
       </div>
       <div class="modal-body">
         <!--Survey Match/results get displayed here-->
-        
+        <h4 id="matchName"></h4>
+        <img id="matchPhoto" src= "" width="200px" height="200px"></img>
 
       </div>
       <div class="modal-footer">
@@ -330,7 +331,8 @@
     
         $.post("/api/friends", newFriend).then(function(data) {
             console.log("survey.html", data);
-
+            $("#matchName").text(data[0]);
+            $("#matchPhoto").attr("src", data[1]);
         });
 
     });

@@ -24,11 +24,11 @@ module.exports = function(app) {
         let newFriend = req.body;
         
 
-        //friend.push(newFriend);
+        
 
         console.log("Posting to api: " + JSON.stringify(newFriend));
 
-        res.json(newFriend);
+        //res.json(newFriend);
 
         //=============================================================
         // Find a match
@@ -39,7 +39,8 @@ module.exports = function(app) {
         let eachFriendScore;
         let resultArray= [];
         let result;
-        
+        let bestMatch = [];
+        let lowestScore = 100;
         function addEmUp (total, num) {
             return total + num;
           };
@@ -48,9 +49,11 @@ module.exports = function(app) {
         // Loop through friend objects in friends array.
         for(let i = 0; i < friend.length; i++) {
 
+            
             eachFriend = friend[i];
             //let difference = 0;
             friend[i].calculatedDifferenceArray = [];
+
             // Loop through friends scores.
             for(let n = 0; n < 10; n++) {
 
@@ -79,12 +82,21 @@ module.exports = function(app) {
             console.log(result) // returning as not a number. DAMNIT!
             // Some kind of conditional to find lowest sum
 
+            // find lowest total diff
+            if( sumOfDifference < lowestScore) {
+                lowestScore = sumOfDifference;
+                console.log("BEST FRIENDS FOREVER")     
+                bestMatch = [friend[i].name, friend[i].photo];
+            };
 
+            console.log(bestMatch);
 
+        }; // END OF 'friend' for loop.
 
-        }; // END OF 'friend' for loop
+        res.json(bestMatch);
 
+        friend.push(newFriend);
         
-    }); // END OF 'post' function
+    }); // END OF 'post' function.
 
-}; // END OF 'module'
+}; // END OF 'module'.
