@@ -65,7 +65,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question1" name="q1">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question1" name="q1">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -85,7 +85,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question2" name="q2">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question2" name="q2">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -105,7 +105,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question3" name="q3">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question3" name="q3">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -125,7 +125,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question4" name="q4">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question4" name="q4">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -145,7 +145,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question5" name="g5">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question5" name="g5">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -165,7 +165,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question6" name="q6">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question6" name="q6">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -185,7 +185,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question7" name="q7">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question7" name="q7">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -205,7 +205,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question8" name="q8">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question8" name="q8">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -225,7 +225,7 @@
             
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question9" name="q9">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question9" name="q9">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -244,7 +244,7 @@
         <div class="form-row align-items-center inline">
             <div class="col-auto my-1">  
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-              <select class="custom-select mr-sm-2 ml-2" id="question10" name="q10">
+              <select class="custom-select mr-sm-2 ml-2 validate" id="question10" name="q10">
                 <option selected>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -284,7 +284,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" id="takeItAgainBtn" data-dismiss="modal">Take the test again!</button>
-        <button type="button" href="/" id="returnHomeInModal" class="btn btn-primary" data-dismiss="modal">Return Home</button>
+        <button type="button" href="/" id="returnHomeInModal" class="btn btn-primary" >Return Home</button>
       </div>
     </div>
   </div>
@@ -335,11 +335,12 @@
 
     });
 
-    
+    // Retake test
     $('#takeItAgainBtn').on("click", function(){
       location.reload();
     });
 
-
+    
+    
 
 </script>
