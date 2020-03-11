@@ -5,22 +5,22 @@
 let friends = [
     {
         name: "Brian Quinn",
-        photo: "https://www.imdb.com/name/nm1978079/mediaviewer/rm3868309248",
+        photo: "https://www.thefamouspeople.com/profiles/images/brian-quinn-1.jpg",
         scores: [4, 2, 3, 3, 5, 4, 2, 5, 2, 3]
     },
     {
         name: "Joe Gatto",
-        photo: "https://www.imdb.com/name/nm2665746/mediaviewer/rm1278301184",
+        photo: "http://thelifehistory.com/wp-content/uploads/2018/02/joe-gatto-net-worth.jpg",
         scores: [5, 1, 3, 5, 2, 5, 4, 3, 2, 3]
     },
     {
         name: "James Murray",
-        photo: "https://www.imdb.com/name/nm2098978/mediaviewer/rm2234602496",
+        photo: "https://www.famousbirthdays.com/faces/murr-james-image.jpg",
         scores: [5, 5, 1, 5, 2, 3, 2, 3, 5, 5]
     },
     {
         name: "Sal Vulcano",
-        photo: "https://www.imdb.com/name/nm1742600/mediaviewer/rm3985749760",
+        photo: "https://www.thefamouspeople.com/profiles/images/sal-vulcano-1.jpg",
         scores: [3, 1, 4, 4, 1, 3, 1, 5, 3, 3]
     },
     {
