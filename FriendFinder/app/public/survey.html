@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
 
-     <!--Bootstrap-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <!--Jquery-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker|Special+Elite&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/style.css"></link>
+    
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
  
 </head>
 
@@ -23,10 +32,11 @@
 
 <div class="jumbotron ml-4 mr-4 mt-4" id="header-div">
         
-    <h1 id="title" class="display-4 text-center">Friend Finder Survey</h1>
+    <h1 id="surveyTitle" class="display-4 text-center">Friend Finder Survey</h1>
 
-    <p class="lead justify text-center">Answer the questions below, hit submit when done.</p>
-    <p class="lead justify text-center"> enter your name, and a photo URL, then pick an answer between 1-5</p>
+    <br>
+    
+    <p id="surveyP" class="lead justify text-center"> enter your name, and a photo URL, then pick an answer between 1-5. When your done hit submit!</p>
 
 </div>
 
@@ -75,7 +85,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I'm not easily bothered by things.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I'm not easily bothered by things.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -95,7 +105,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I'm interested in computers.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I'm interested in computers.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -115,7 +125,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">Android is better than Apple.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">Android is better than Apple.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -135,7 +145,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I make plans and stick to them.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I make plans and stick to them.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -155,7 +165,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">Cats are awesome...most of the time.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">Cats are awesome...most of the time.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -175,7 +185,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I like the outdoors</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I like the outdoors</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -195,7 +205,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">Bring on the snow!</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">Bring on the snow!</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -215,7 +225,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I'm more of a 'morning' person.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I'm more of a 'morning' person.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -235,7 +245,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">I enjoy a good book over a movie any day.</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">I enjoy a good book over a movie any day.</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -255,7 +265,7 @@
                 <option value="5">5 (strongly agree)</option>
               </select>
             </div>
-            <p class=" ml-2 mb-2 text-sm-right">Night life is the life for me!</p>
+            <p class=" ml-2 mb-2 text-sm-right surveyQuestion">Night life is the life for me!</p>
         </div>
 
         <hr class="ml-2 mr-2">
@@ -322,6 +332,7 @@
         let q9 = $('#question9').val()
         let q10 = $('#question10').val()
 
+        // Have to create my own validation because Bootstrap validation isnt working....
         // Validation ,IF no vlaues, alert. IF values entered create newFriend object, post to api, find match, and assign attr. to submit button to display modal.
         if ($('#name').val() === "" || $('#photoURL').val() === "" || q1 === "" || q2 === "" || q3 === "" || q4 === "" || q5 === "" || q6 === "" || q7 === "" || q8 === "" || q9 === "" || q10 === "") {
           alert("You need to fill out all the values and answer all the questions!");

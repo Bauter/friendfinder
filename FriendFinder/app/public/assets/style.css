@@ -1,0 +1,35 @@
+body {
+    background-color: #c7c1c1; 
+}
+
+#homeTitle {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#homeP {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#surveyTitle {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#surveyP {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.surveyQuestion {
+    font-family: 'Special Elite', cursive;
+}
+
+.modal-title {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#matchName {
+    font-family: 'Special Elite', cursive;
+}
+
+#survey-header {
+    font-family: 'Permanent Marker', cursive;
+}
