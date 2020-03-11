@@ -8,7 +8,9 @@
 
      <!--Bootstrap-->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
      <!--Jquery-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
@@ -27,7 +29,7 @@
 
 </div>
 
-<div class="card m-4" id="survey div">
+<div class="card m-4" id="survey-div">
 
     <div class="card-header" id="survey-header">
         Friend Finder Survey!
@@ -256,7 +258,7 @@
 
         <hr class="ml-2 mr-2">
         <!--Submit button for form-->
-        <input type="submit" class="btn btn-primary m-4 float-right" id="submit">
+        <input type="submit" class="btn btn-primary m-4 float-right" id="submit" data-toggle="modal" data-target="#resultModal">
 
     </form>
 
@@ -265,8 +267,27 @@
 </div>
 
 <!--Modal?-->
-<div class="modal">
+<!-- Modal (BS4) -->
+<div class="modal fade" id="resultModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Results</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--Survey Match/results get displayed here-->
+        
 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="takeItAgainBtn" data-dismiss="modal">Take the test again!</button>
+        <button type="button" href="/" id="returnHomeInModal" class="btn btn-primary" data-dismiss="modal">Return Home</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!--footer-->
@@ -283,8 +304,11 @@
 
     // JS code goes here for survey values and posting
 
+    //Submit button JS
     $('#submit').on("click", function (event) {
         event.preventDefault();
+
+        $('#survey-div').fadeOut();
         
         let q1 = $('#question1').val()
         let q2 = $('#question2').val()
@@ -310,5 +334,12 @@
         });
 
     });
+
+    
+    $('#takeItAgainBtn').on("click", function(){
+      location.reload();
+    });
+
+
 
 </script>
