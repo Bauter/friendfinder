@@ -1,5 +1,5 @@
 body {
-    background-color: #c7c1c1; 
+    background-color: #919191; 
 }
 
 #homeTitle {
@@ -18,7 +18,7 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-.surveyQuestion {
+.surveyQuestion, .qNum {
     font-family: 'Special Elite', cursive;
 }
 
@@ -32,4 +32,16 @@ body {
 
 #survey-header {
     font-family: 'Permanent Marker', cursive;
+}
+
+.spanRed {
+    color: red;
+}
+
+.spanBlue {
+    color: blue;
+}
+
+.spanYellow {
+    color: yellow;
 }
