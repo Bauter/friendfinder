@@ -45,3 +45,7 @@ body {
 .spanYellow {
     color: yellow;
 }
+
+.fa-users, .fa-poll-h, .fa-user-friends {
+    color: green;
+}
