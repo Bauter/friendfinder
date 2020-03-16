@@ -14,7 +14,7 @@ https://f-finder-bauter.herokuapp.com/
 3. '.gitignore' file to write what files you would not like to upload. 
 4. NPM packages: 'express' & 'path'.
 5. If you choose to utilize it (like I did) Bootstrap-4 framework for html pages. See the 'DOCS' page for more information on how to implement BS4 if its new to you! ("https://getbootstrap.com/").
-6. If you wish to host the site to a dynamic server, create an account with 'Heroku' and download the required installation ()
+6. If you wish to host the site to a dynamic server, create an account with 'Heroku' and download the required installation ("www.Heroku.com")
 
 ## Lets get set up!
 
@@ -393,3 +393,13 @@ app.listen(PORT, function() {
 `$ git push heroku master`
 
 6. And thats it, your application should be created, with your files pushed. Navigate tou your heroku 'dashboard' (in browser) to view your application.
+
+## Guidelines for Collaboration ##
+
+-As I am still new to coding, and my initial projects will be used to create a portfolio to show to potential employers, i ask that no modifications are made at this time.
+
+#### However ####
+
+-Any input to improve my coding would be GREATLY appreciated. I am not opposed to the files being pulled for the sake of modifying and using as an example to teach/explain alt. methods, better practice, etc. Again I would ask they not be pushed to the repo to modify the initial document, but instead be sent to me an some alt. way.
+
+--Thank you for taking the time to look over this 'README' file--
