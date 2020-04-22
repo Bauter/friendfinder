@@ -5,6 +5,8 @@ basically a dating app. This full-stack site will take in results from your user
 
 https://f-finder-bauter.herokuapp.com/
 
+![friendfinder-app](friendfinder.gif)
+
 ## What you will need
 
 -explanations to follow
